@@ -1,6 +1,6 @@
 apiVersion: tekton.dev/v1beta1
 kind: Pipeline
-metadata:  
+metadata:
   name: juphc-tc-pipeline
 spec:
   workspaces:
@@ -11,6 +11,7 @@ spec:
     - name: repo-url
     - name: branch
       default: main
+    - name: app-name        
   tasks:
   
     - name: init
